@@ -1,0 +1,31 @@
+command:
+  - python
+  - app.py
+
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    value: 22998c886e21ee6c
+  # Foundation Model endpoint used by the coding agent (swap for a gateway-governed endpoint)
+  - name: CDI_AGENT_ENDPOINT
+    value: databricks-claude-sonnet-5
+  # Set to the id printed by notebooks/batch_code_notes.py to enable MLflow tracing
+  - name: MLFLOW_EXPERIMENT_ID
+    value: ""
+  - name: MLFLOW_TRACING_SQL_WAREHOUSE_ID
+    value: 22998c886e21ee6c
+  - name: MLFLOW_DISABLE_AGENT_HINT
+    value: "1"
+  - name: CDI_DECISIONS_TABLE
+    value: coder_decisions_test
+  - name: GENIE_SPACE_URL
+    value: https://emerging-emea-hackathons.cloud.databricks.com/genie/rooms/01f1c183a7d110b0a595ed59287bd9ba?o=955682294748605
+
+resources:
+  - name: sql-warehouse
+    sql_warehouse:
+      id: 22998c886e21ee6c
+      permission: CAN_USE
+  - name: agent-llm
+    serving_endpoint:
+      name: databricks-claude-sonnet-5
+      permission: CAN_QUERY

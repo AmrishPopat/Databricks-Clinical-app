@@ -1,0 +1,6 @@
+.note-text { white-space: pre-wrap; font-family: SFMono-Regular, Menlo, monospace; font-size: 0.78rem;
+             max-height: 340px; overflow-y: auto; background: #f8f9fa; padding: 10px; border-radius: 4px; }
+mark.ev-code { background: #fff3cd; padding: 0 2px; border-radius: 3px; scroll-margin: 60px; }
+mark.ev-gap  { background: #f8d7da; padding: 0 2px; border-radius: 3px; scroll-margin: 60px; }
+mark sup     { color: #6c757d; font-size: 0.6rem; }
+mark:target  { background: #ffc107; outline: 2px solid #fd7e14; transition: background 0.3s; }
