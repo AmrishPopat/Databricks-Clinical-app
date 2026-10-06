@@ -1,7 +1,5 @@
 # Clinical Coding & CDI Co-pilot — Architecture
 
-> Repository: https://github.com/AmrishPopat/Databricks-Clinical-app
-
 ---
 
 ## Executive Summary (for Judges)
